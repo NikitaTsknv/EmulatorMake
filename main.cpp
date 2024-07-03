@@ -173,7 +173,7 @@ int main(int argc, char * argv[]) {
 	for (const auto& arg : vector_arg) {
 
 		// проверка - существует ли такая цель в файле
-	        if (umap_relation.count(arg) == 0 && umap_command.count(arg) == 0) {
+	        if (umap_relation.count(arg) == 0 || umap_command.count(arg) == 0) {
                         std::cout << "Target doesn`t exist. Exit" << std::endl;
                         return 0;
                 }
