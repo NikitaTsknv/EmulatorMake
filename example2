@@ -1,0 +1,6 @@
+all: clean build
+	print All
+build: all
+	print Build
+clean:
+	print Clean
